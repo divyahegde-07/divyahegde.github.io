@@ -2,7 +2,7 @@
 date: '2015-12-21'
 title: 'Course Content Assistant'
 company: 'Experiential Digital Global Education, Northeastern University'
-location: 'Hyderabad, IN'
+location: 'Boston, MA'
 range: 'Sep 2024 - Jan 2025'
 url: 'https://edge.northeastern.edu/'
 ---
