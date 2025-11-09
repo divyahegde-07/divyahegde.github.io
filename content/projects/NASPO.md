@@ -1,6 +1,6 @@
 ---
 date: '2021-05-01'
-title: 'Easy Piano'
+title: 'NASPO Academic Collaboration Award'
 external: 'https://www.linkedin.com/pulse/osds-innovations-earn-national-recognition-ma-osd-se0ye/'
 ios: ''
 android: ''
