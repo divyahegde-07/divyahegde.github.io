@@ -67,7 +67,7 @@ const Hero = () => {
     <>
       <p>
        I thrive where data science, software engineering, and product meet. 
-        I love solving puzzles--whether in code, data, or crosswords—and turning complex problems into smart, practical solutions. 
+        I love solving puzzles--whether in code, data, or crosswords--and turning complex problems into smart, practical solutions. 
         With experience in product development and consulting, I bring both analytical rigor and a results-driven mindset to every challenge.
       </p>
     </>
