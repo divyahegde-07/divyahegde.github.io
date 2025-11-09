@@ -39,23 +39,46 @@ const StyledProject = styled.li`
     }
   }
 
+  .project-tech-list-wrapper {
+    margin: 20px 0;
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+    border-radius: var(--border-radius);
+    background-color: var(--light-navy);
+    padding: 5px;
+
+    @media (max-width: 768px) {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
   &:nth-of-type(odd) {
     .project-content {
       grid-column: 7 / -1;
       text-align: right;
 
+      .project-description ul {
+        direction: rtl;
+      }
+
       @media (max-width: 1080px) {
-        grid-column: 5 / -1;
+        grid-column: 7 / -1;
       }
       @media (max-width: 768px) {
         grid-column: 1 / -1;
         padding: 40px 40px 30px;
         text-align: left;
+        .project-description ul {
+          direction: ltr;
+        }
       }
       @media (max-width: 480px) {
         padding: 25px 25px 20px;
       }
     }
+
     .project-tech-list {
       justify-content: flex-end;
 
@@ -124,7 +147,12 @@ const StyledProject = styled.li`
   }
 
   .project-title {
+    background-color: var(--light-navy);
     color: var(--lightest-slate);
+    position: relative;
+    z-index: 2;
+    padding: 15px;
+    border-radius: var(--border-radius);
     font-size: clamp(24px, 5vw, 28px);
 
     @media (min-width: 768px) {
@@ -173,11 +201,6 @@ const StyledProject = styled.li`
 
     a {
       ${({ theme }) => theme.mixins.inlineLink};
-    }
-
-    strong {
-      color: var(--white);
-      font-weight: normal;
     }
   }
 
@@ -233,11 +256,6 @@ const StyledProject = styled.li`
         height: 20px;
       }
     }
-
-    .cta {
-      ${({ theme }) => theme.mixins.smallButton};
-      margin: 10px;
-    }
   }
 
   .project-image {
@@ -245,7 +263,7 @@ const StyledProject = styled.li`
     grid-column: 6 / -1;
     grid-row: 1 / -1;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 
     @media (max-width: 768px) {
       grid-column: 1 / -1;
@@ -296,7 +314,7 @@ const StyledProject = styled.li`
         object-fit: cover;
         width: auto;
         height: 100%;
-        filter: grayscale(100%) contrast(1) brightness(50%);
+        filter: grayscale(100%) contrast(1) brightness(80%);
       }
     }
   }
@@ -306,8 +324,8 @@ const Featured = () => {
   const data = useStaticQuery(graphql`
     {
       featured: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/featured/" } }
-        sort: { fields: [frontmatter___date], order: ASC }
+        filter: { fileAbsolutePath: { regex: "/featured/" } }
+        sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
           node {
@@ -321,7 +339,6 @@ const Featured = () => {
               tech
               github
               external
-              cta
             }
             html
           }
@@ -354,7 +371,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { external, title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -373,25 +390,22 @@ const Featured = () => {
                     />
 
                     {tech.length && (
-                      <ul className="project-tech-list">
-                        {tech.map((tech, i) => (
-                          <li key={i}>{tech}</li>
-                        ))}
-                      </ul>
+                      <div className="project-tech-list-wrapper">
+                        <ul className="project-tech-list">
+                          {tech.map((tech, i) => (
+                            <li key={i}>{tech}</li>
+                          ))}
+                        </ul>
+                      </div>
                     )}
 
                     <div className="project-links">
-                      {cta && (
-                        <a href={cta} aria-label="Course Link" className="cta">
-                          Learn More
-                        </a>
-                      )}
                       {github && (
                         <a href={github} aria-label="GitHub Link">
                           <Icon name="GitHub" />
                         </a>
                       )}
-                      {external && !cta && (
+                      {external && (
                         <a href={external} aria-label="External Link" className="external">
                           <Icon name="External" />
                         </a>
