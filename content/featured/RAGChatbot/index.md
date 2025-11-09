@@ -1,6 +1,6 @@
 ---
 date: '2021-05-01'
-cover: './oneL.jpg'
+cover: './RAG.jpg'
 title: 'RAG Chatbot'
 github: 'https://github.com/divyahegde-07/ai4impact-abe-chatbot-osd-dh'
 external: 'https://www.linkedin.com/pulse/osds-innovations-earn-national-recognition-ma-osd-se0ye/'
