@@ -1,6 +1,6 @@
 ---
 date: '2021-05-01'
-cover: 'https://github.com/divyahegde-07/SemantiScout/blob/main/Results/pet_collar_image.png'
+cover: './semantiscout.png'
 title: 'Semanti Scout - MultiModal Product Search'
 github: 'https://github.com/divyahegde-07/SemantiScout'
 ios: ''
