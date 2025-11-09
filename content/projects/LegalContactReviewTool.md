@@ -7,7 +7,7 @@ tech:
   - Gen-AI
   - AWS
   - SCSS
-company: 'The Burnes Center for Social Chane'
+company: 'The Burnes Center for Social Change'
 showInProjects: false
 ---
 
