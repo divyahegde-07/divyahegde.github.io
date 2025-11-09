@@ -1,7 +1,6 @@
 ---
 date: '2021-05-01'
 title: 'Easy Piano'
-/*github: 'https://github.com/eoanodea/iadty4-rp-frontend'*/
 external: 'https://www.linkedin.com/pulse/osds-innovations-earn-national-recognition-ma-osd-se0ye/'
 ios: ''
 android: ''
