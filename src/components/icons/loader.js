@@ -4,23 +4,26 @@ const IconLoader = () => (
   <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <title>Loader Logo</title>
     <g>
-      <g id="B" transform="translate(20.000000, 29.000000)">
+      {/* Inner letter D */}
+      <g id="D" transform="translate(23, 29)">
         <path
-          d="M 22.75 36 L 0 36 L 0 0 L 22.75 0 L 22.75 4.225 L 4.45 4.225 L 4.45 15.5 L 19.75 15.5 L 19.75 19.725 L 4.45 19.725 L 4.45 31.775 L 22.75 31.775 L 22.75 36 Z"
+          d="M0 0 H8 C16 0 22 6 22 18 C22 30 16 36 8 36 H0 Z M4 4 V32 H8 C13 32 18 28 18 18 C18 8 13 4 8 4 Z"
           fill="currentColor"
         />
       </g>
+
+      {/* Outer hexagon */}
       <path
         stroke="currentColor"
         strokeWidth="5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M 50, 5
-                  L 11, 27
-                  L 11, 72
-                  L 50, 95
-                  L 89, 73
-                  L 89, 28 z"
+        d="M 50,5
+           L 11,27
+           L 11,72
+           L 50,95
+           L 89,73
+           L 89,28 z"
       />
     </g>
   </svg>
