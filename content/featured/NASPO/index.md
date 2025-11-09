@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'NASPO Academic Collaboration Award'
-cover: './course-card.png'
+cover: './naspo.jpg'
 external: 'https://www.linkedin.com/pulse/osds-innovations-earn-national-recognition-ma-osd-se0ye/'
 cta: 'https://www.linkedin.com/pulse/osds-innovations-earn-national-recognition-ma-osd-se0ye/'
 ---
