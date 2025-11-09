@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['NLP', 'Recommender Systems', 'Data Analysis', 'Predictive Modeling','Fine-tuning', 'Model Deployment', 'Data Pipelines', 'NLU', 'Agentic AI', 'Cloud (AWS,GCP)'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,32 +135,26 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+            I build AI and ML systems that work in the real world. I enjoy working with data, fine-tuning models, and writing production-ready code, especially when machine learning, systems, and product thinking intersect.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+            I’ve designed and deployed NLP pipelines for chatbots and contract review tools, helping automate repetitive workflows and make internal processes more efficient. 
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+            I’ve also had the privilege of working at {' '}
+            <a href="https://www.salesforce.com/">Salesforce</a>,{' '}
+            <a href="https://burnes.northeastern.edu/">Burnes Center for Social Change</a>, and as a{' '}
+            <a href="https://burnes.northeastern.edu/">Course Content Assistant for Advanced NLP</a>,{' '}
+            where I deepened my understanding of how natural language understanding can create tangible impact across domains.
             </p>
 
+            <p>
+            I have a proven track record of developing and deploying models end to end, from research to production, and bring a build-and-iterate mindset to every project.
+            I see myself as a solution architect designing AI-driven systems that combine personalization, natural text understanding, and product vision to solve complex challenges
+            Outside of work, you’ll find me at the gym, hiking a trail, doodling ideas, or tending to my plants.  
+            </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
 
