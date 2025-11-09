@@ -5,7 +5,7 @@ const IconLoader = () => (
     <title>Loader Logo</title>
     <g>
       {/* Inner letter D */}
-      <g id="D" transform="translate(38,29)">
+      <g id="D" transform="translate(39,29)">
         <path
           d="M0 0 H8 C16 0 22 6 22 18 C22 30 16 36 8 36 H0 Z M4 4 V32 H8 C13 32 18 28 18 18 C18 8 13 4 8 4 Z"
           fill="currentColor"
