@@ -1,5 +1,5 @@
 ---
-date: '2017-11-01'
+date: '5'
 title: 'A/B Testing-Recommendation Algorithms'
 github: 'https://github.com/divyahegde-07/A-B-Testing-of-recommendation-algorithms/tree/main'
 tech:
