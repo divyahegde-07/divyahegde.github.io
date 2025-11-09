@@ -6,7 +6,7 @@ tech:
   - AWS Sagemaker
   - AWS Glue
   - XGBoost
-showInProjects: false
+showInProjects: true
 ---
 
 A/B tested new recommendation algorithm to test its effectiveness in conversion rate and ROI. 
