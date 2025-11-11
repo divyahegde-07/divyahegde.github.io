@@ -1,5 +1,5 @@
 ---
-date: '2017-12-01'
+date: '1'
 title: 'The Nutrition Project'
 github: 'https://github.com/divyahegde-07/The-Nutrition-Project?search=1'
 tech:

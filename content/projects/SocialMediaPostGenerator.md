@@ -1,5 +1,5 @@
 ---
-date: '2017-12-01'
+date: '6'
 title: 'Plug-and-Play Social Media Post Generator'
 github: 'https://github.com/divyahegde-07/Plug-and-Play-Social-Media-Post-Generator'
 tech:
